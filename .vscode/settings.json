@@ -1,0 +1,18 @@
+{
+    "workbench.iconTheme": "vscode-icons",
+    "git.enableSmartCommit": true,
+    "editor.minimap.enabled": false,
+    "editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "workbench.colorTheme": "Monokai",
+    "workbench.preferredDarkColorTheme": "Monokai",
+    "explorer.compactFolders": false,
+    "git.autofetch": true,
+    "emmet.triggerExpansionOnTab": true, // enable tab to expanse emmet tags
+    "blade.format.enable": true,         // if you would like to enable blade format
+    "[blade]": {
+        "editor.autoClosingBrackets": "always"
+    },
+}
