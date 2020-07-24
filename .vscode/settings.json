@@ -1,5 +1,5 @@
 {
-    "workbench.iconTheme": "vscode-icons",
+    "workbench.iconTheme": "material-icon-theme",
     "git.enableSmartCommit": true,
     "editor.minimap.enabled": false,
     "editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace",
