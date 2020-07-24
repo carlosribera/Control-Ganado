@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Admin\Permiso;
 use Illuminate\Http\Request;
+use App\Http\Requests\ValidarPermiso;
 
 class PermisoController extends Controller
 {
@@ -35,7 +36,7 @@ class PermisoController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function guardar(Request $request)
+    public function guardar(ValidarPermiso $request)
     {
         Permiso::create($request->all());
         return redirect('admin/permiso/crear')->with('mensaje', 'Permiso creado con exito');
@@ -71,7 +72,7 @@ class PermisoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function actualizar(Request $request, $id)
+    public function actualizar(ValidarPermiso $request, $id)
     {
         Permiso::findOrFail($id)->update($request->all());
         return redirect('admin/permiso')->with('mensaje', 'Permiso actualizado con exito');
@@ -83,7 +84,7 @@ class PermisoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function eliminar($id)
+    public function eliminar(Request $request, $id)
     {
         if ($request->ajax()) {
             if (Permiso::destroy($id)) {
