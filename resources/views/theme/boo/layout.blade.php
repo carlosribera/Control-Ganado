@@ -9,8 +9,15 @@
     <meta name="generator" content="Jekyll v4.0.1">
     <title>@yield('titulo', 'Control GANADO') | Redes&Reses</title>
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{{asset("assets/$theme/bower_components/font-awesome/css/font-awesome.min.css")}}">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="{{asset("assets/$theme/bower_components/Ionicons/css/ionicons.min.css")}}">
+
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/dashboard/">
 
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.css" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="{{asset("assets/css/bootstrap.min.css")}}">
 
@@ -59,15 +66,23 @@
             </main>
         </div>
     </div>
+
+
+    <script src="{{asset("assets/$theme/bower_components/jquery/dist/jquery.min.js")}}"></script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="{{asset("assets/$theme/bower_components/bootstrap/dist/js/bootstrap.min.js")}}"></script>
+    <!-- SlimScroll -->
+    <script src="{{asset("assets/$theme/bower_components/jquery-slimscroll/jquery.slimscroll.min.js")}}"></script>
+    <!-- FastClick -->
+    <script src="{{asset("assets/$theme/bower_components/fastclick/lib/fastclick.js")}}"></script>
+
+
     <script src="{{asset("assets/js/jquery-3.5.1.slim.min.js")}}"></script>
-    <script>
-        window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
-    </script>
+    <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+       
+
     <script src="{{asset("assets/js/bootstrap.bundle.js")}}">
-    </script>
-    <script src="{{asset("assets/js/feather.min.js")}}"></script>
-    <script src="{{asset("assets/js/Chart.min.js")}}"></script>
-    <script src="{{asset("assets/dashboard.js")}}">
     </script>
     @yield("scriptsPlugins")
 

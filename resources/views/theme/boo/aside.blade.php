@@ -71,5 +71,19 @@
         </a>
       </li>
     </ul>
-  </div>
+
+
+    <ul class="nav flex-column mb-2 sidebar-menu" data-widget="tree">
+      <li class="header">Menú Principal</li>
+        @foreach ($menusComposer as $key => $item)
+            @if ($item["menu_id"] != 0)
+                @break
+            @endif
+            @include("theme.$theme.menu-item", ["item" => $item])
+        @endforeach
+    </ul>
+
+
+
+    </div>
 </nav>
